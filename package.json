@@ -1,0 +1,85 @@
+{
+    "name": "immer-adapter",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ngxs-labs/immer-adapter.git"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/ngxs-labs/immer-adapter#readme",
+    "bugs": {
+        "url": "https://github.com/ngxs-labs/immer-adapter/issues"
+    },
+    "keywords": [
+        "ngxs",
+        "redux",
+        "store"
+    ],
+    "contributors": [
+        {
+            "name": "Artur Androsovych",
+            "email": "arthurandrosovich@gmail.com"
+        },
+        {
+            "name": "Maxim Ivanov",
+            "email": "splincodewd@yandex.ru"
+        }
+    ],
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "e2e": "ng e2e",
+        "// - UTILS": "Utility scripts",
+        "immer-adapter:lint": "ng lint immer-adapter",
+        "immer-adapter:test": "ng test --runInBand --silent",
+        "immer-adapter:build": "ts-node ./tools/build && ts-node ./tools/copy-readme",
+        "immer-adapter:rollup": "rollup -c rollup.config.js",
+        "// - CI": "CI pipelines",
+        "ci:pipelines": "npm-run-all immer-adapter:*",
+        "// - npm": "npm scripts",
+        "bump": "ts-node ./tools/bump",
+        "format": "prettier --write \"**/*.ts\""
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/common": "18.1.4",
+        "@angular/compiler": "18.1.4",
+        "@angular/core": "18.1.4",
+        "@angular/platform-browser": "18.1.4",
+        "@angular/platform-browser-dynamic": "18.1.4",
+        "@ngxs-labs/emitter": "1.9.0",
+        "@ngxs/store": "18.1.1",
+        "@types/jest": "29.5.12",
+        "immer": "^10.1.1",
+        "prettier": "3.3.3",
+        "rxjs": "^7.8.1",
+        "zone.js": "0.14.10"
+    },
+    "devDependencies": {
+        "@angular-builders/jest": "18.1.4",
+        "@angular-devkit/build-angular": "18.1.4",
+        "@angular-devkit/build-ng-packagr": "18.1.4",
+        "@angular/cli": "18.1.4",
+        "@angular/compiler-cli": "18.1.4",
+        "@types/node": "^22.2.0",
+        "@types/semver": "7.5.8",
+        "@types/yargs": "12.0.11",
+        "codelyzer": "4.5.0",
+        "core-js": "^3.14.0",
+        "jest": "24.9.0",
+        "ng-packagr": "4.7.1",
+        "npm-run-all": "4.1.5",
+        "rollup": "1.32.0",
+        "rollup-plugin-node-resolve": "4.2.4",
+        "rollup-plugin-sourcemaps": "0.6.3",
+        "semver": "5.6.0",
+        "ts-node": "10.9.2",
+        "tsickle": "^0.37.1",
+        "tslib": "^2.6.3",
+        "tslint": "5.20.1",
+        "tslint-sonarts": "1.9.0",
+        "typescript": "~5.5.4",
+        "yargs": "13.3.0"
+    }
+}

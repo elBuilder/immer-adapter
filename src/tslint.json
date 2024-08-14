@@ -1,0 +1,20 @@
+{
+    "extends": "../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "immer-adapter",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "immer-adapter",
+            "kebab-case"
+        ],
+        "no-big-function": false,
+        "no-duplicate-string": false,
+        "no-non-null-assertion": false
+    }
+}
